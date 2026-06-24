@@ -80,7 +80,7 @@ export default function App() {
     <div className="min-h-screen bg-slate-50 font-sans selection:bg-teal-500 selection:text-white">
       
       {/* 1. HEADER / NAVIGATION */}
-      <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+      <header className="sticky top-0 z-50 bg-white/45 backdrop-blur-lg border-b border-white/20 shadow-sm">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           
           {/* Logo and brand */}
@@ -267,16 +267,17 @@ export default function App() {
           {/* Hero Right Content: Gorgeous Doctor portrait frame */}
           <div className="lg:col-span-5 relative flex justify-center">
             {/* Status indicator on the picture */}
-            <div className="absolute top-6 right-6 z-10 bg-white/90 backdrop-blur-md border border-slate-100 px-3 py-1.5 rounded-full flex items-center gap-2 shadow-md">
+            <div className="absolute top-6 right-6 z-10 bg-white/70 backdrop-blur-md border border-white/45 px-3 py-1.5 rounded-full flex items-center gap-2 shadow-md">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-ping" />
               <span className="text-xs font-bold text-slate-700">2500+ Médecins En Ligne</span>
             </div>
 
-            {/* Circular backdrop pattern */}
-            <div className="absolute w-[320px] h-[320px] sm:w-[400px] sm:h-[400px] rounded-full bg-gradient-to-tr from-teal-50 to-cyan-50/50 -bottom-10 -right-4 -z-10" />
+            {/* Morphing glass blobs pattern */}
+            <div className="absolute w-[240px] h-[240px] rounded-full bg-teal-400/20 blur-2xl -bottom-4 -left-4 animate-liquid-1 -z-10" />
+            <div className="absolute w-[300px] h-[300px] rounded-full bg-cyan-400/20 blur-2xl -top-10 -right-10 animate-liquid-2 -z-10" />
 
             {/* Portrait with a clean aesthetic border */}
-            <div className="border-8 border-white shadow-xl rounded-3xl overflow-hidden aspect-[3/4] w-[280px] sm:w-[340px] bg-slate-100 relative group transition-all duration-500 hover:shadow-2xl">
+            <div className="border-8 border-white/50 backdrop-blur-md shadow-xl rounded-3xl overflow-hidden aspect-[3/4] w-[280px] sm:w-[340px] bg-white/20 relative group transition-all duration-500 hover:shadow-2xl">
               <img
                 src="/src/assets/images/hero_doctor_1782309684625.jpg"
                 alt="Directrice Clinique MEDICA+"
@@ -542,8 +543,16 @@ export default function App() {
       </section>
 
       {/* 7. HIGH-PRIORITY CLINICAL WORKSPACE / TERMINAL (MEDICA+ INTERACTIVE APP) */}
-      <section id="medica-terminal" className="py-16 md:py-24 bg-slate-900 border-t border-slate-950 text-white relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section id="medica-terminal" className="py-16 md:py-24 bg-slate-950 border-t border-slate-950 text-white relative overflow-hidden">
+        
+        {/* Glowing Liquid Glass Blobs background */}
+        <div className="absolute inset-0 pointer-events-none overflow-hidden z-0">
+          <div className="absolute top-1/4 left-1/4 w-80 h-80 bg-teal-500/15 rounded-full blur-3xl animate-liquid-1" />
+          <div className="absolute top-1/2 right-1/4 w-[450px] h-[450px] bg-cyan-500/10 rounded-full blur-3xl animate-liquid-2" />
+          <div className="absolute -bottom-10 left-1/3 w-[400px] h-[400px] bg-indigo-500/10 rounded-full blur-3xl animate-liquid-3" />
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           
           <div className="text-center max-w-3xl mx-auto mb-12 space-y-3">
             <span className="text-xs uppercase font-bold text-teal-400 tracking-widest font-mono">ESPACE INTERACTIF</span>
@@ -556,7 +565,7 @@ export default function App() {
           </div>
 
           {/* Module Selector Sidebar/Header */}
-          <div className="flex flex-wrap justify-center gap-2 mb-8 bg-slate-950 p-2.5 rounded-2xl border border-slate-800 max-w-5xl mx-auto">
+          <div className="flex flex-wrap justify-center gap-2 mb-8 dark-liquid-glass p-2.5 rounded-2xl max-w-5xl mx-auto">
             {[
               { id: 'auth', label: '🔐 Authentification', desc: 'JWT & MFA' },
               { id: 'dmp', label: '📂 Dossier Médical', desc: 'DMP / IRM' },

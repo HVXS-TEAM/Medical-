@@ -48,7 +48,7 @@ export default function PrescriptionModule() {
   };
 
   return (
-    <div id="prescription-module" className="bg-white rounded-2xl border border-slate-200/80 shadow-md overflow-hidden">
+    <div id="prescription-module" className="liquid-glass rounded-2xl shadow-xl overflow-hidden">
       <div className="bg-gradient-to-r from-teal-600 to-cyan-600 text-white px-6 py-5 border-b border-teal-500/20">
         <div className="flex items-center gap-3">
           <div className="bg-white/10 p-2 rounded-xl text-white border border-white/20">

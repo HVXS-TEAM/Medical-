@@ -67,7 +67,7 @@ export default function AuthModule({ onLoginSuccess }: AuthModuleProps) {
   };
 
   return (
-    <div id="auth-module" className="bg-white rounded-2xl border border-slate-200/80 shadow-md max-w-md mx-auto overflow-hidden">
+    <div id="auth-module" className="liquid-glass rounded-2xl shadow-xl max-w-md mx-auto overflow-hidden">
       <div className="bg-gradient-to-r from-teal-600 to-cyan-700 px-6 py-6 text-white relative">
         <div className="absolute top-0 right-0 p-4 opacity-10">
           <Shield className="w-24 h-24" />

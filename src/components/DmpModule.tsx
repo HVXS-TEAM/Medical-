@@ -166,9 +166,9 @@ export default function DmpModule() {
   }, [sliceIndex, contrast, brightness]);
 
   return (
-    <div id="dmp-module" className="bg-white rounded-2xl border border-slate-200/80 shadow-md overflow-hidden">
+    <div id="dmp-module" className="liquid-glass rounded-2xl shadow-xl overflow-hidden">
       {/* Module header */}
-      <div className="bg-slate-900 text-white px-6 py-5 border-b border-slate-800">
+      <div className="bg-slate-900/90 text-white px-6 py-5 border-b border-slate-800">
         <div className="flex flex-col md:flex-row md:items-center justify-between gap-4">
           <div className="flex items-center gap-3">
             <div className="bg-teal-500/10 p-2 rounded-xl text-teal-400 border border-teal-500/20">
@@ -191,7 +191,7 @@ export default function DmpModule() {
       </div>
 
       {/* Patient overview header banner */}
-      <div className="bg-slate-50 border-b border-slate-200/60 px-6 py-4 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="bg-white/45 border-b border-white/20 backdrop-blur-sm px-6 py-4 grid grid-cols-2 md:grid-cols-4 gap-4">
         <div>
           <span className="text-[10px] text-slate-400 font-bold uppercase block tracking-wider">Patient</span>
           <span className="text-sm font-semibold text-slate-700 block">{patientProfile.fullName}</span>
@@ -199,7 +199,7 @@ export default function DmpModule() {
         </div>
         <div>
           <span className="text-[10px] text-slate-400 font-bold uppercase block tracking-wider">Identifiant DMP</span>
-          <span className="text-xs font-mono text-teal-700 block mt-1 bg-teal-50 px-2 py-0.5 rounded-md border border-teal-100 w-fit">
+          <span className="text-xs font-mono text-teal-700 block mt-1 bg-teal-50/80 px-2 py-0.5 rounded-md border border-teal-100/50 w-fit">
             {patientProfile.id}
           </span>
         </div>
@@ -207,7 +207,7 @@ export default function DmpModule() {
           <span className="text-[10px] text-slate-400 font-bold uppercase block tracking-wider">Allergies Critiques</span>
           <div className="flex flex-wrap gap-1 mt-1">
             {patientProfile.allergies.map((allergy, i) => (
-              <span key={i} className="bg-red-50 text-red-700 border border-red-100 text-[10px] font-semibold px-2 py-0.5 rounded-full">
+              <span key={i} className="bg-red-50/80 text-red-700 border border-red-100/50 text-[10px] font-semibold px-2 py-0.5 rounded-full">
                 {allergy}
               </span>
             ))}
@@ -222,7 +222,7 @@ export default function DmpModule() {
       </div>
 
       {/* Tabs */}
-      <div className="border-b border-slate-200 px-6 bg-slate-50/50 flex flex-wrap gap-2">
+      <div className="border-b border-white/20 px-6 bg-white/20 flex flex-wrap gap-2">
         <button
           onClick={() => setActiveTab('overview')}
           className={`py-3 px-4 text-xs font-semibold border-b-2 transition-all ${

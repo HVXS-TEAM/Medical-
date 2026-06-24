@@ -84,7 +84,7 @@ export default function TeleconsultationModule() {
   };
 
   return (
-    <div id="teleconsultation-module" className="bg-white rounded-2xl border border-slate-200/80 shadow-md overflow-hidden">
+    <div id="teleconsultation-module" className="liquid-glass rounded-2xl shadow-xl overflow-hidden">
       {/* Module Header */}
       <div className="bg-slate-900 text-white px-6 py-4 flex items-center justify-between border-b border-slate-800">
         <div className="flex items-center gap-3">

@@ -417,7 +417,7 @@ export default function RootLayout({
   };
 
   return (
-    <div id="architecture-explorer" className="bg-white rounded-2xl border border-slate-200/80 shadow-md overflow-hidden">
+    <div id="architecture-explorer" className="liquid-glass rounded-2xl shadow-xl overflow-hidden">
       <div className="bg-slate-900 px-6 py-4 flex items-center justify-between border-b border-slate-800">
         <div className="flex items-center gap-3">
           <div className="bg-teal-500/10 p-2 rounded-lg text-teal-400 border border-teal-500/20">
@@ -438,7 +438,7 @@ export default function RootLayout({
 
       <div className="grid grid-cols-1 lg:grid-cols-12 min-h-[460px]">
         {/* Navigation panel */}
-        <div className="lg:col-span-4 border-r border-slate-100 bg-slate-50/50 p-4 overflow-y-auto max-h-[500px]">
+        <div className="lg:col-span-4 border-r border-white/20 bg-white/25 p-4 overflow-y-auto max-h-[500px]">
           <div className="flex items-center justify-between px-2 mb-3">
             <span className="text-xs font-bold text-slate-400 uppercase tracking-wider font-mono">Arborescence Projet</span>
             <Database className="w-3.5 h-3.5 text-slate-400" />
