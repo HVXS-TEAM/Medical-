@@ -1,0 +1,6 @@
+{
+  "name": "Hôpital Virtuel MEDICA+",
+  "description": "Plateforme de santé numérique premium et hôpital virtuel de référence à Yaoundé, Cameroun.",
+  "requestFramePermissions": ["camera", "microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
